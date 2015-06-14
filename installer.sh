@@ -2,7 +2,7 @@
 #
 # Designed to use with: wget https://raw.githubusercontent.com/BuzzAPI/phpsysinfo/master/installer.sh && bash installer.sh
 # 
-version=3.2.2.1-buzzapi-mod
+version=3.2.2.2-buzzapi-mod
 echo "-Downloading and unzipping packages... \n"
 wget "https://github.com/BuzzAPI/phpsysinfo/archive/v"$version".tar.gz" -q -O - | tar -xz
 
@@ -14,7 +14,7 @@ while true; do
 			replace "admin" $user -- "phpsysinfo-"$version"/passwd.php" >/dev/null
 			
 			read -p "Enter you desired password: " pass
-			replace "pass" $pass -- "phpsysinfo-"$version"/passwd.php" >/dev/null
+			replace "password" $pass -- "phpsysinfo-"$version"/passwd.php" >/dev/null
 			
 			break;;
         [Nn]* )  

@@ -1,8 +1,8 @@
 <?php 
-// Enable or disable pasword protect
+// Enable or disable login protect
 $password_enabled=TRUE;
 
-// set de user an password, DEFAULT= admin/password
+// set de user and pass
 $user = "admin";
 $pass = "password";
 
