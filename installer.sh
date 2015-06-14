@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-# Designed to use with wget -O - https://raw.githubusercontent.com/BuzzAPI/phpsysinfo/master/installer.sh | bash
+# Designed to use with: wget https://raw.githubusercontent.com/BuzzAPI/phpsysinfo/master/installer.sh && bash installer.sh
 # 
-version=3.2.2-buzzapi-mod
+version=3.2.2.1-buzzapi-mod
 echo "-Downloading and unzipping packages... \n"
 wget "https://github.com/BuzzAPI/phpsysinfo/archive/v"$version".tar.gz" -q -O - | tar -xz
 
