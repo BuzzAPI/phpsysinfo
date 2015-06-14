@@ -1,4 +1,8 @@
 <?php
+
+// require de passwd to set login
+require_once "./passwd.php";
+
 header('Access-Control-Allow-Origin: *');
 /**
  * generate the xml

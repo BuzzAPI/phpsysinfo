@@ -1,4 +1,7 @@
 <?php
+
+// require de passwd to set login
+require_once "./passwd.php";
 /**
  * start page for webaccess
  * redirect the user to the supported page type by the users webbrowser (js available or not)
