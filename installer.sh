@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# Designed to use with wget -O - https://raw.githubusercontent.com/BuzzAPI/phpsysinfo/master/installer.sh | bash
+# 
 version=3.2.2-buzzapi-mod
 echo "-Downloading and unzipping packages... \n"
 wget "https://github.com/BuzzAPI/phpsysinfo/archive/v"$version".tar.gz" -q -O - | tar -xz
@@ -28,7 +31,7 @@ read -p "Enter web domain public folder: " destination
 
 mv "phpsysinfo-"$version $destination"/phpsysinfo"
 
-echo "Finish! You can see it in "domain"/phpsysinfo"
+echo "Finish! You can see it in "$domain"/phpsysinfo"
 
 
 
