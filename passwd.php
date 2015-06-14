@@ -13,5 +13,4 @@ if($password_enabled){
 	  header('HTTP/1.0 401 Unauthorized');
 	  die ("Not authorized");
 	}
-	echo "Login OK";
 }
